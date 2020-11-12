@@ -1,0 +1,395 @@
+/* Global styling */
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	line-height: 1.3;
+}
+a {
+	text-decoration: none;
+	color: #2c3e50;
+}
+.page-divider {
+	width: 80%;
+	margin-top: 20%;
+	margin-bottom: 10%;
+	border: 1px solid rgba(243, 156, 18, 0.7);
+}
+
+.title-border {
+	width: 40px;
+	margin-top: -10px;
+	margin-bottom: 2rem;
+	border: 4px solid #724428;
+}
+/* Modal styling */
+/* Background popup */
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1; /* Displays the modal on top of everything */
+	width: 100%;
+	height: 110%;
+	left: 0;
+	padding-top: 100px;
+	right: 0;
+	overflow: auto;
+	background-color: rgb(0, 0, 0, 0.4);
+}
+/* Modal content */
+.modal-content {
+	position: relative;
+	background-color: #fefefe;
+	margin: auto;
+	padding: 0;
+	border: 1px solid #888;
+	width: 90%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	animation-name: animatetop;
+	animation-duration: 0.4s;
+}
+
+/* Close modal button */
+.close {
+	color: white;
+	float: right;
+	font-size: 30px;
+	font-weight: 900;
+}
+
+.close:hover,
+.close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+/* Submit button */
+.submit {
+	padding: 9px 0;
+	width: 25%;
+	margin: 2px 0 10px 16px;
+	border: none;
+	background-color: #2c3e50;
+	color: white;
+	border-radius: 5px;
+}
+
+/* Form header */
+.modal-header {
+	padding: 1px 16px;
+	width: 100%;
+	color: white;
+	background-color: #2c3e50;
+}
+
+.modal-form {
+	padding: 2px 16px;
+	width: 80%;
+	margin: 1rem auto 1rem auto;
+}
+.input-container input {
+	margin-bottom: 10px;
+	display: inline-block;
+}
+
+input {
+	padding: 0.5rem;
+	margin-right: 30px;
+	width: 100%;
+	border: 1px solid #bdc3c7;
+}
+select {
+	padding: 0.5rem;
+	margin-right: 30px;
+	width: 100%;
+	border: 1px solid #bdc3c7;
+}
+
+input:focus {
+	width: 210px;
+	border: 2px solid #e67e22;
+}
+
+label {
+	margin-right: 1rem;
+	font-weight: 500;
+}
+
+/* Navigation styling */
+#myTopNav {
+	margin-top: -21px;
+	/* height: 100%; */
+}
+
+.nav {
+	overflow: hidden;
+	background-color: #73584b;
+}
+
+.nav a {
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 1rem;
+}
+
+.nav a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+.nav a.active {
+	background-color: #c59775;
+	color: white;
+}
+
+.nav .icon {
+	display: none;
+}
+
+/* This is CSS animations to create the cross effect when opened. Check JS state of modal. So essentially if opened is detected use these classes*/
+
+/* .main-header {
+	padding: 10px 0;
+	text-align: center;
+}
+
+.header {
+	font-size: 1.6rem;
+	margin-top: 1.5rem;
+	padding-bottom: 10px;
+	font-weight: 900;
+}
+
+.main-nav a {
+	padding: 1em;
+	font-size: 1.1em;
+	font-weight: 700;
+	display: block;
+	color: #ecf0f1;
+}
+
+.main-nav {
+	background-color: #2c3e50;
+	border-radius: 0 0 5px 5px;
+} */
+
+/* Main content styling */
+
+.content1 {
+	background-image: url("../assets/kalen-emsley-Bkci_8qcdvQ-unsplash.jpg");
+	height: 450px;
+	background-color: #cccccc;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.display-image-responsive {
+	display: none;
+	width: 100%;
+	height: 20%;
+	box-shadow: 5px 10px 18px #888888;
+}
+.section1-text {
+	position: absolute;
+	color: #2c3e50;
+	width: 80%;
+	background-color: rgba(236, 240, 241, 0.9);
+	margin: 2rem 0 0 1.5rem;
+	padding: 1rem;
+	border-radius: 5%;
+	border: 5px solid #724428;
+}
+.header-headers {
+	font-size: 1.2rem;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.header-text {
+	margin-top: 0.5rem;
+}
+
+.mainButton {
+	padding: 0.5rem 1rem;
+	width: 100px;
+	border: 2px solid #724428;
+	border-radius: 25px;
+	float: right;
+}
+
+.mainButton > a {
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+/* Section2 Styles */
+.content-container {
+	text-align: center;
+	padding: 1rem 1rem 0 1rem;
+	margin-bottom: 5%;
+}
+.content-container1 {
+	text-align: center;
+	padding: 1rem;
+	margin-bottom: 5%;
+}
+.content2 {
+	width: 90%;
+	margin: auto;
+}
+.content-headers {
+	font-size: 1.2rem;
+	text-transform: uppercase;
+}
+
+.display-icon {
+	width: 40%;
+	height: 4%;
+}
+.display-image {
+	width: 100%;
+	height: 20%;
+	box-shadow: 5px 10px 18px #888888;
+}
+
+.findButton {
+	margin-top: 1rem;
+	padding: 0.8rem 0 0.8rem;
+	width: 60%;
+	border: 2px solid #d35400;
+	border-radius: 25px;
+}
+
+/* Section3 Styles */
+
+.button-group {
+	display: inline-flex;
+	margin-top: 20px;
+}
+
+.content2 a {
+	color: white;
+}
+.donate-button {
+	padding: 0.8rem 0;
+	width: 120px;
+	background-color: #2ecc71;
+	margin-right: 10px;
+	border-radius: 10px;
+	border: none;
+}
+.volunteer-button {
+	padding: 0.8rem 0;
+	width: 120px;
+	background-color: #e74c3c;
+	border-radius: 10px;
+	border: none;
+}
+.community-button {
+	padding: 0.8rem 0;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	width: 250px;
+	background-color: #2980b9;
+	border-radius: 10px;
+	border: none;
+}
+/* .clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+} */
+
+/* Responsive design */
+@media screen and (max-width: 600px) {
+	/* Responsive navigation */
+	.nav a:not(:first-child) {
+		display: none;
+	}
+	.nav a.icon {
+		float: right;
+		display: block;
+	}
+	.nav.responsive .icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	.nav.responsive a {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+	.nav.responsive a:nth-child(2) {
+		margin-top: -21px;
+	}
+}
+
+@media screen and (min-width: 601px) {
+	/* Layout */
+	.section1-text {
+		width: 50%;
+		margin-left: 25%;
+		margin-right: auto;
+	}
+	.page-divider {
+		display: none;
+	}
+	.title-border {
+		display: none;
+	}
+	.content-container {
+		text-align: left;
+	}
+	.section2-text {
+		width: 50%;
+		text-align: left;
+		/* float: left; */
+		display: inline-block;
+		/* margin-right: 5%; */
+	}
+
+	.display-icon {
+		width: 150px;
+		float: right;
+		margin-right: 20%;
+		display: none;
+	}
+
+	.content-container1 {
+		display: block;
+	}
+
+	.display-image {
+		float: left;
+		width: 40%;
+	}
+	.display-image-responsive {
+		/* float: left; */
+		width: 40%;
+		display: inline-block;
+		margin-left: 60%;
+		margin-right: auto;
+	}
+}
+
+/* Add Animation and keyframing */
+/* Modal animation */
+@keyframes animatetop {
+	from {
+		top: -300px;
+		opacity: 0;
+	}
+	to {
+		top: 0;
+		opacity: 1;
+	}
+}

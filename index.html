@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>AWC</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div id='signin-modal' class='modal'>
+      <!-- Modal content -->
+        <div class='modal-content'>
+          <div class='modal-header'>
+            <span class='close'>&times;</span>
+            <h4>Sign up</h4>
+          </div>
+          <div class='modal-form'>
+            <div class='input-container'>
+              <label for="fname" >First Name:</label>
+              <input id='fname' type="text" placeholder='Your first name...'>
+            </div>
+            <div class='input-container'>
+              <label for="lname" >Last Name:</label>
+              <input id='lname' type="text" placeholder='Your last name...'>
+            </div>
+            <div class='input-container'>
+              <label for="email" >Email:</label>
+              <input id='email' type="text" placeholder='www.example@gmail.com'>
+            </div>
+            <div class='input-container'>
+              <label for="birthday">DOB:</label>
+              <input type="date" id="birthday" name="birthday">
+            </div>
+            <div class='input-container'>
+              <label for="fname">Gender:</label>
+              <select name="gender" id="gender">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+                <option value="Not specified">Not specified</option>
+              </select>
+            </div>
+          </div>
+          <button class='submit'>Submit</button>
+        </div>
+    </div>
+    <!-- Responsive Navbar -->
+      <div id='myTopNav' class='nav'>
+        <h1 class='header'><a href="/" class='active'>YWC</a></h1>
+        <a href="">Home</a>
+        <a href="">Topics</a>
+        <a href="">Community</a>
+        <a class='icon' onClick="navbarToggle()" href="javascript:void(0);">
+          <i class='fa fa-bars'></i>
+        </a>
+      </div>
+
+    <!-- Header -->
+    <section class='header-component'>
+      <div class='content1'>
+        <div class='section1-text'>
+          <h1 class='header-headers'>Youth Wildlife Conservation</h1>
+          <p class='header-text'>We are youth wildlife conservation where we want youths to be able to make a greater change than just for themselves. This is the best opportunity for you to find out more and join our large online community to find like minded youths!</p>
+          <button id='openModal' class='mainButton' >
+            <a href="javascript:void(0);">Sign Up</a>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- main content -->
+    <section class='content-container'>
+      <div class='content2'>
+        <div class='section2-text'>
+          <h3 class='content-headers'>Why do we do this?</h3>
+          <hr class='title-border'>
+          <p class='content-text'>We do this both for our natural wildlife and to empower youths. Human's destructive nature is destroying our forests, wildlife and natural habitats. We want to unite our youths to being along cultural change to help <strong>YOU</strong> understand why this is so important.</p>
+        </div>
+        <img class='display-icon' src="assets/icons/koala.svg" alt="Koala icon">
+        <img class='display-image-responsive' src="assets/david-clode-DJVgHZoeASw-unsplash.jpg" alt="Koala Image">
+      </div>
+      <hr class='page-divider'>
+    </section>
+
+    <section class='content-container1'>
+      <div class='content2'>
+        <div class='section2-text'>
+          <h3 class='content-headers'>How you can help!</h3>
+          <hr class='title-border'>
+          <p class='content-text'>Helping the world is easy... you firstly need to be aware of the damage and destruction you are causing by simple everyday purchases or actions <strong>AND avoid</strong> these behaviours. But to take it a step further click on one of these three buttons!</p>
+        </div>
+        <img src="assets/nate-johnston-BW9bM5UoLk4-unsplash.jpg" alt="Image of beautiful rainforest" class='display-image'>
+        <div>
+          <ul class='button-group'>
+            <li>
+              <button class='donate-button'>
+                <a href="">Donate</a>
+              </button>
+            </li>
+            <li>
+              <button class='volunteer-button'>
+                <a href="">Volunteer</a>
+              </button>
+            </li>
+            
+          </ul>
+          <button class='community-button'>
+            <a href="">Join community</a>
+          </button>
+        </div>
+      </div>
+      <hr class='page-divider'>
+    </section>
+    <section class='content-container'>
+
+    </section>
+    <script src="index.js"></script>
+  </body>
+</html>
