@@ -14,7 +14,6 @@ const navbar = document.getElementById("myTopNav");
 signupButton.onclick = function () {
 	form.style.display = "block";
 };
-
 //Handle events (Close) but pass in no props (Not required)
 closeButton.onclick = function () {
 	form.style.display = "none";
@@ -22,7 +21,6 @@ closeButton.onclick = function () {
 submitButton.onclick = function () {
 	form.style.display = "none";
 };
-
 //Clicking anywhere outside the modal should close it as well passing in
 //Event property
 window.onclick = function (event) {
