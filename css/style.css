@@ -232,10 +232,11 @@ label {
 }
 
 .content2 {
-	width: 90%;
 	display: flex;
+	width: 90%;
 	margin: auto;
 }
+
 .content-headers {
 	font-size: 1.2rem;
 	text-transform: uppercase;
@@ -332,31 +333,25 @@ label {
 	/* Layout */
 	.content2:nth-child(odd) {
 		flex-direction: row-reverse;
-		background-color: red;
 	}
-	.content2 {
-		justify-content: space-around;
+	.display-image {
+		width: 600px;
+		height: 400px;
 	}
+
 	.section1-text {
 		width: 50%;
 		margin-left: 25%;
 		margin-right: auto;
 	}
+	.section2-text {
+		margin-left: 5%;
+	}
 	.page-divider {
 		display: none;
 	}
-
 	.content-container {
 		text-align: left;
-	}
-	.section2-text {
-		text-align: left;
-		/* float: left; */
-		/* margin-right: 5%; */
-	}
-
-	.display-image {
-		width: 80%;
 	}
 }
 
