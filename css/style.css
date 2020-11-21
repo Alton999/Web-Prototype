@@ -54,10 +54,10 @@ a {
 
 /* Close modal button */
 .close {
-	color: white;
 	float: right;
 	font-size: 30px;
-	font-weight: 900;
+	margin-top: 15px;
+	margin-right: 10px;
 }
 
 .close:hover,
@@ -72,7 +72,7 @@ a {
 	width: 25%;
 	margin: 2px 0 10px 16px;
 	border: none;
-	background-color: #73584b;
+	background-color: #c0392b;
 	color: white;
 	border-radius: 5px;
 }
@@ -82,7 +82,7 @@ a {
 	padding: 1px 16px;
 	width: 100%;
 	color: white;
-	background-color: #73584b;
+	background-color: #c0392b;
 }
 
 .modal-form {
@@ -184,19 +184,21 @@ label {
 
 .header-container {
 	background-image: url("../assets/kalen-emsley-Bkci_8qcdvQ-unsplash.jpg");
-	height: 450px;
+	height: 100%;
 	background-color: #cccccc;
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
+	padding: 2rem 0;
 }
 
 .section1-text {
-	position: absolute;
 	color: #2c3e50;
+	position: relative;
+	text-align: left;
+	margin: auto;
 	width: 80%;
 	background-color: rgba(236, 240, 241, 0.9);
-	margin: 2rem 0 0 1.5rem;
 	padding: 1rem;
 	border-radius: 5%;
 	border: 5px solid #724428;
@@ -213,15 +215,16 @@ label {
 
 .mainButton {
 	padding: 0.5rem 1rem;
-	width: 100px;
-	border: 2px solid #724428;
+	width: 100%;
+	border: none;
+	background-color: #c0392b;
 	border-radius: 25px;
-	float: right;
 }
 
 .mainButton > a {
 	font-weight: 400;
 	text-transform: uppercase;
+	color: white;
 }
 
 /* Section2 Styles */
@@ -306,7 +309,6 @@ label {
 	div.content2 {
 		flex-wrap: wrap;
 	}
-
 	.nav a:not(:first-child) {
 		display: none;
 	}
