@@ -120,8 +120,7 @@ label {
 
 /* Navigation styling */
 #myTopNav {
-	margin-top: -21px;
-	/* height: 100%; */
+	margin-top: -13px;
 }
 
 .nav {
@@ -144,7 +143,7 @@ label {
 	color: black;
 }
 
-.nav a.active {
+.nav a.current {
 	background-color: #c59775;
 	color: white;
 }
@@ -153,34 +152,7 @@ label {
 	display: none;
 }
 
-/* This is CSS animations to create the cross effect when opened. Check JS state of modal. So essentially if opened is detected use these classes*/
-
-/* .main-header {
-	padding: 10px 0;
-	text-align: center;
-}
-
-.header {
-	font-size: 1.6rem;
-	margin-top: 1.5rem;
-	padding-bottom: 10px;
-	font-weight: 900;
-}
-
-.main-nav a {
-	padding: 1em;
-	font-size: 1.1em;
-	font-weight: 700;
-	display: block;
-	color: #ecf0f1;
-}
-
-.main-nav {
-	background-color: #2c3e50;
-	border-radius: 0 0 5px 5px;
-} */
-
-/* Main content styling */
+/* Header page styling */
 
 .header-container {
 	background-image: url("../assets/kalen-emsley-Bkci_8qcdvQ-unsplash.jpg");
@@ -203,7 +175,7 @@ label {
 	border-radius: 5%;
 	border: 5px solid #724428;
 }
-.header-headers {
+.header {
 	font-size: 1.2rem;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -213,21 +185,22 @@ label {
 	margin-top: 0.5rem;
 }
 
-.mainButton {
+.headerButton {
 	padding: 0.5rem 1rem;
+	margin-top: 10px;
 	width: 100%;
 	border: none;
 	background-color: #c0392b;
 	border-radius: 25px;
 }
 
-.mainButton > a {
+.headerButton > a {
 	font-weight: 400;
 	text-transform: uppercase;
 	color: white;
 }
 
-/* Section2 Styles */
+/* Main content Styles */
 .content-container {
 	text-align: left;
 	padding: 1rem 1rem 0 1rem;
@@ -259,7 +232,7 @@ label {
 }
 
 /* Section3 Styles */
-.buttons-container a {
+/* .buttons-container a {
 	color: white;
 }
 .buttons-container {
@@ -269,9 +242,9 @@ label {
 .button-group {
 	display: inline-flex;
 	margin-top: 20px;
-}
+} */
 
-.donate-button {
+/* .donate-button {
 	padding: 0.8rem 0;
 	width: 120px;
 	background-color: #2ecc71;
@@ -296,12 +269,45 @@ label {
 	background-color: #2980b9;
 	border-radius: 10px;
 	border: none;
-}
-/* .clearfix::after {
-	content: "";
-	clear: both;
-	display: table;
 } */
+
+/* Interactive call to action section */
+.fullwidth-container {
+	background-color: #c0392b;
+	width: 100%;
+	height: 300px;
+}
+#interactive-bar {
+	display: flex;
+	margin: auto;
+	width: 90%;
+	justify-content: center;
+}
+#interactive-bar button {
+	display: block;
+	/* margin-top: 1rem; */
+	margin: 0;
+	background-color: #c0392b;
+	padding: 1.5rem 1rem 0.5rem 1rem;
+	color: #95a5a6;
+	font-size: 1rem;
+	background-color: none;
+	border: none;
+	border-bottom: 4px solid grey;
+	/* padding: 1rem 1rem 0 1rem; */
+}
+
+#interactive-bar button.active,
+#interactive-bar button:hover {
+	border-bottom: 4px solid white;
+	color: white;
+}
+
+.fullwidth-container div:nth-child(2) {
+	color: white;
+	width: 90%;
+	margin: 25px auto;
+}
 
 /* Responsive design */
 @media screen and (max-width: 500px) {
@@ -327,7 +333,7 @@ label {
 		text-align: left;
 	}
 	.nav.responsive a:nth-child(2) {
-		margin-top: -21px;
+		margin-top: -13px;
 	}
 }
 

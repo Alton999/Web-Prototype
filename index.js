@@ -9,6 +9,11 @@ const submitButton = document.getElementsByClassName("submit")[0];
 
 //Navbar initialisation
 const navbar = document.getElementById("myTopNav");
+const openNavButton = document.getElementById("open-nav");
+
+//Toggle initialisation
+var toggleBar = document.getElementById("interactive-bar");
+var btns = toggleBar.getElementsByClassName("btn");
 
 //Handle events (Open) but pass in no props (Not required)
 signupButton.onclick = function () {
@@ -31,10 +36,18 @@ window.onclick = function (event) {
 };
 
 //Navbar toggle script (Esssentially just add the className in)
-function navbarToggle() {
+openNavButton.onclick = function () {
 	if (navbar.className === "nav") {
 		navbar.className += " responsive";
 	} else {
 		navbar.className = "nav";
 	}
+};
+
+for (var i = 0; i < btns.length; i++) {
+	btns[i].addEventListener("click", function () {
+		var current = document.getElementsByClassName("active");
+		current[0].className = current[0].className.replace(" active", "");
+		this.className += " active";
+	});
 }
