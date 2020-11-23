@@ -372,6 +372,7 @@ a {
 	> .toggle-donation
 	button.active-donation {
 	background-color: #2ecc71;
+	box-shadow: none;
 }
 
 #donate-btn {
@@ -434,28 +435,29 @@ a {
 	margin-right: 10px;
 	border-radius: 3px;
 	border: none;
-	background-color: #724428;
+	background-color: #c59775;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .footer > div:nth-child(4) input::placeholder {
 	/* Chrome, Firefox, Opera, Safari 10.1+ */
-	color: #bdc3c7;
+	color: white;
 	opacity: 1; /* Firefox */
 }
 .footer > div:nth-child(4) input:-ms-input-placeholder {
 	/* Internet Explorer 10-11 */
-	color: #bdc3c7;
+	color: white;
 }
 .footer > div:nth-child(4) input::-ms-input-placeholder {
 	/* Microsoft Edge */
-	color: #bdc3c7;
+	color: white;
 }
 .footer > div:nth-child(4) button {
 	padding: 0.5rem;
 	height: 50px;
-	background: #724428;
+	background: #c59775;
 	border: none;
+	border-radius: 5px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -499,14 +501,13 @@ a {
 
 @media screen and (min-width: 501px) {
 	/* Layout */
-	.content2:nth-child(odd) {
+	.content2:nth-child(n) {
 		flex-direction: row-reverse;
 	}
 	.display-image {
 		width: 600px;
 		height: 400px;
 	}
-
 	.section1-text {
 		width: 50%;
 		margin-left: 25%;
