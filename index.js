@@ -12,8 +12,10 @@ const navbar = document.getElementById("myTopNav");
 const openNavButton = document.getElementById("open-nav");
 
 //Toggle initialisation
-var toggleBar = document.getElementById("interactive-bar");
-var btns = toggleBar.getElementsByClassName("btn");
+const togglePage = document.getElementById("fullwidth-container");
+const toggleBar = document.getElementById("interactive-bar");
+const btns = toggleBar.getElementsByClassName("btn");
+const toggleDiv = togglePage.getElementsByClassName("toggle-div");
 
 //Handle events (Open) but pass in no props (Not required)
 signupButton.onclick = function () {
@@ -44,10 +46,17 @@ openNavButton.onclick = function () {
 	}
 };
 
-for (var i = 0; i < btns.length; i++) {
+//This for loop loops over the three toggle buttons and adds a click listener
+//Since we didnt want to individually select each button using the in built
+//Js onclick doesn't work anymore. We use these buttons to inject the class
+//Active
+for (let i = 0; i < btns.length; i++) {
 	btns[i].addEventListener("click", function () {
-		var current = document.getElementsByClassName("active");
-		current[0].className = current[0].className.replace(" active", "");
+		const activeBtn = toggleBar.getElementsByClassName("active");
+		const activeDiv = togglePage.getElementsByClassName("activated");
+		activeBtn[0].className = activeBtn[0].className.replace(" active", "");
 		this.className += " active";
+		activeDiv[0].className = activeDiv[0].className.replace(" activated", "");
+		toggleDiv[i].className += " activated";
 	});
 }

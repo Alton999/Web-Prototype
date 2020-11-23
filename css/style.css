@@ -95,25 +95,25 @@ a {
 	display: inline-block;
 }
 /* Form styling */
-input {
+.modal-form input {
 	padding: 0.5rem;
 	margin-right: 30px;
 	width: 100%;
 	border: 1px solid #bdc3c7;
 }
-select {
+.modal-form select {
 	padding: 0.5rem;
 	margin-right: 30px;
 	width: 100%;
 	border: 1px solid #bdc3c7;
 }
 
-input:focus {
-	width: 210px;
+.modal-form input:focus {
 	border: 2px solid #e67e22;
+	padding: 0.5rem 1.2rem;
 }
 
-label {
+.modal-form label {
 	margin-right: 1rem;
 	font-weight: 500;
 }
@@ -232,50 +232,14 @@ label {
 }
 
 /* Section3 Styles */
-/* .buttons-container a {
-	color: white;
-}
-.buttons-container {
-	text-align: center;
-}
-
-.button-group {
-	display: inline-flex;
-	margin-top: 20px;
-} */
-
-/* .donate-button {
-	padding: 0.8rem 0;
-	width: 120px;
-	background-color: #2ecc71;
-	margin-right: 10px;
-	border-radius: 10px;
-	border: none;
-}
-.volunteer-button {
-	padding: 0.8rem 0;
-	width: 120px;
-	background-color: #e74c3c;
-	border-radius: 10px;
-	border: none;
-}
-.community-button {
-	padding: 0.8rem 0;
-	margin-top: 10px;
-	margin-left: auto;
-	margin-right: auto;
-	display: block;
-	width: 250px;
-	background-color: #2980b9;
-	border-radius: 10px;
-	border: none;
-} */
 
 /* Interactive call to action section */
-.fullwidth-container {
+#fullwidth-container {
 	background-color: #c0392b;
-	width: 100%;
-	height: 300px;
+	margin-top: 50px;
+	/* padding: 1rem; */
+	height: 770px;
+	/* width: 100%; */
 }
 #interactive-bar {
 	display: flex;
@@ -289,24 +253,154 @@ label {
 	margin: 0;
 	background-color: #c0392b;
 	padding: 1.5rem 1rem 0.5rem 1rem;
-	color: #95a5a6;
+	color: #e67e22;
 	font-size: 1rem;
 	background-color: none;
+	font-weight: 600;
 	border: none;
-	border-bottom: 4px solid grey;
+	border-bottom: 4px solid #e67e22;
 	/* padding: 1rem 1rem 0 1rem; */
 }
 
 #interactive-bar button.active,
 #interactive-bar button:hover {
 	border-bottom: 4px solid white;
+	font-weight: 600;
 	color: white;
 }
 
-.fullwidth-container div:nth-child(2) {
+#fullwidth-container div:not(:first-child) {
 	color: white;
+	text-align: left;
 	width: 90%;
 	margin: 25px auto;
+	display: none;
+}
+
+/* .toggle-div input:focus {
+	border: 2px solid #f1c40f;
+	padding: 1.5rem;
+} */
+#fullwidth-container div input {
+	width: 100%;
+	margin-top: 5px;
+	padding: 0.8rem;
+	border-radius: 3px;
+	border: none;
+	background-color: #f39c12;
+}
+
+#fullwidth-container div input::placeholder {
+	/* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: white;
+	opacity: 1; /* Firefox */
+}
+#fullwidth-container div input:-ms-input-placeholder {
+	/* Internet Explorer 10-11 */
+	color: white;
+}
+#fullwidth-container div input::-ms-input-placeholder {
+	/* Microsoft Edge */
+	color: white;
+}
+/* #fullwidth-container div:nth-child(2) input:focus {
+	padding: 0.8rem 1.5rem;
+} */
+#fullwidth-container div > .toggle-donation {
+	display: flex;
+	justify-content: space-between;
+}
+#fullwidth-container div > #toggle-interests {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+#fullwidth-container div > #toggle-interests button {
+	background-color: white;
+	padding: 0.8rem 0.5rem;
+	border-radius: 10px;
+	border: none;
+	margin-bottom: 1rem;
+	color: #c0392b;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#fullwidth-container div > #toggle-interests button:first-child {
+	color: white;
+	padding: 0.8rem 0.5rem;
+	border-radius: 10px;
+	border: none;
+	margin-bottom: 1rem;
+	background-color: #f39c12;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#toggle-interests img {
+	display: block;
+	width: 75px;
+	height: 75px;
+	background: none;
+	margin-top: 15px;
+}
+#confirm-interests {
+	width: 100%;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	padding: 1rem;
+	background: #d35400;
+	border: none;
+	border-radius: 25px;
+	/* text-transform: uppercase; */
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#fullwidth-container div > .toggle-donation button {
+	border-radius: 100%;
+	background-color: #d35400;
+	border: none;
+	width: 55px;
+	height: 55px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#fullwidth-container div:nth-child(2) > .toggle-donation button:hover {
+	background-color: #2ecc71;
+}
+#fullwidth-container
+	div:nth-child(2)
+	> .toggle-donation
+	button.active-donation {
+	background-color: #2ecc71;
+}
+
+#donate-btn {
+	width: 100%;
+	margin-top: 1rem;
+	padding: 1rem;
+	background: #d35400;
+	border: none;
+	border-radius: 25px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Styling the community cards container */
+#full-width-container div:nth-child(3) > div {
+	display: flex;
+}
+
+#fullwidth-container div.activated {
+	display: block;
+}
+
+.full-image {
+	width: 100%;
+	margin-top: 2rem;
+	/* margin-left: -15px; */
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.toggle-rule {
+	width: 100%;
+	color: grey;
+	margin-bottom: 30px;
 }
 
 /* Responsive design */

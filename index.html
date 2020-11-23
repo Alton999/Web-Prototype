@@ -93,7 +93,7 @@
         <div class='section2-text'>
           <h3 class='content-headers'>How you can help!</h3>
           <hr class='title-border'>
-          <p class='content-text'>Helping the world is easy... you firstly need to be aware of the damage and destruction you are causing by simple everyday purchases or actions <strong>AND avoid</strong> these behaviours. But to take it a step further click on one of these three buttons!</p>
+          <p class='content-text'>Helping the world is easy... you firstly need to be aware of the damage and destruction you are causing by simple everyday purchases or actions <strong>AND avoid</strong> these behaviours.</p>
         </div>
         <div>
           <img src="assets/nate-johnston-BW9bM5UoLk4-unsplash.jpg" alt="Image of beautiful rainforest" class='display-image'>
@@ -118,18 +118,76 @@
         </div> -->
       </div>
     </section>
-    <section class='fullwidth-container'>
+    <section id='fullwidth-container'>
       <div id='interactive-bar'>
         <button class='btn active'>Donate</button>
-        <button class='btn '>Volunteer</button>
-        <button class='btn '>Community</button>
+        <button class='btn'>Volunteer</button>
+        <button class='btn'>Community</button>
       </div>
-      <div>
-        <p>Rainforests and the natural habitats are slowly </p>
+      <div class='toggle-div activated'>
+        <p>This is your opportunity to spend money on something that is greater than yourself. <em>Remember it is not about how much you give but your attitude of giving that matters!</em></p>
+        <hr class='toggle-rule'/>
+        <div class='toggle-donation'>
+          <!-- Here I'm going to need  round buttons -->
+          <button class='active-donation'>$5</button>
+          <button>$10</button>
+          <button>$15</button>
+          <button>$20</button>
+        </div>
+        <hr class='toggle-rule'/>
+        <input type="text" placeholder="Email">
+        <button id='donate-btn'>Donate</button>
+        <!-- <img class='full-image' src="assets/kerin-gedge-a9CE7d_Kaq4-unsplash.jpg" alt="Kangaroo Image"> -->
       </div>
-    </section>
-    <section class='content-container'>
       
+      <div class='toggle-div'>
+        <p>Volunteering is one of the most direct ways you can impact the world with your hard work. This is the most hands on experience you can get as a youth and we will provide all the training needed!</p>
+        <hr class='toggle-rule'/>
+        <div id='toggle-interests'>
+          <button>
+            <strong>Sports</strong>  
+            <img src="assets/icons/001-community.svg" alt="CommunitySVG">
+          </button>
+          <button>
+            <strong>Animals</strong>  
+            <img src="assets/icons/koala.svg" alt="KoalaSVG">
+          </button>
+          <button>
+            <strong>Kids</strong>  
+            <img src="assets/icons/002-social.svg" alt="SocialSVG">
+          </button>
+          <button>
+            <strong>Volunteer</strong>  
+            <img src="assets/icons/001-volunteer.svg" alt="VolunteerSVG">
+          </button>
+          <button>
+            <strong>Social</strong>  
+            <img src="assets/icons/003-chat.svg" alt="ChatSVG">
+          </button>
+          <button>
+            <strong>Funds</strong>  
+            <img src="assets/icons/online-donation.svg" alt="FundRaiserSVG">
+          </button>
+        </div>
+        <input type="text" placeholder='Other...'>
+        <hr class='toggle-rule'/>
+        <button id="confirm-interests">Confirm Interests and Sign Up</button>
+        
+      </div>
+
+      <div class='toggle-div'>
+        <p>Communities are a great way to meet like minded people that want to help out and gain new lifelong friends in the process!</p>
+        <hr class="toggle-rule"/>
+        <h3>Why join a YWC community?</h3>
+        <p>Joining a community is the best and most engaging way to interact with what we do here at YWC. Find training programmes and friends to sign up with to both learn new skills and have experiences that cannot be found anywhere else!</p>
+        <h3>Upcoming programmes:</h3>
+        <div>
+          <button>
+            <strong>Be Out There!</strong>
+            <img src="assets/icons/002-volunteer.svg" alt="Current Placeholder">
+          </button>
+        </div>
+      </div>
     </section>
     <script src="index.js"></script>
   </body>
