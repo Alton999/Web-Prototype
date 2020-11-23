@@ -1,7 +1,7 @@
 // Conditional rendering by using get element by ID
 // Initalising variables
 const form = document.getElementById("signin-modal");
-const signupButton = document.getElementById("openModal");
+const signupButtons = document.getElementsByClassName("openModal");
 //Only selects the first element with the class name of close. Ensure that we don't
 //Use any other class name called close.
 const closeButton = document.getElementsByClassName("close")[0];
@@ -16,11 +16,16 @@ const togglePage = document.getElementById("fullwidth-container");
 const toggleBar = document.getElementById("interactive-bar");
 const btns = toggleBar.getElementsByClassName("btn");
 const toggleDiv = togglePage.getElementsByClassName("toggle-div");
+const activeBtn = toggleBar.getElementsByClassName("active");
+const activeDiv = togglePage.getElementsByClassName("activated");
 
 //Handle events (Open) but pass in no props (Not required)
-signupButton.onclick = function () {
-	form.style.display = "block";
-};
+for (let i = 0; i < signupButtons.length; i++) {
+	signupButtons[i].onclick = function () {
+		form.style.display = "block";
+	};
+}
+
 //Handle events (Close) but pass in no props (Not required)
 closeButton.onclick = function () {
 	form.style.display = "none";
@@ -52,8 +57,6 @@ openNavButton.onclick = function () {
 //Active
 for (let i = 0; i < btns.length; i++) {
 	btns[i].addEventListener("click", function () {
-		const activeBtn = toggleBar.getElementsByClassName("active");
-		const activeDiv = togglePage.getElementsByClassName("activated");
 		activeBtn[0].className = activeBtn[0].className.replace(" active", "");
 		this.className += " active";
 		activeDiv[0].className = activeDiv[0].className.replace(" activated", "");
