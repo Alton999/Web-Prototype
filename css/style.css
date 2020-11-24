@@ -149,6 +149,7 @@ a {
 }
 
 .nav .icon {
+	font-size: 1.3rem;
 	display: none;
 }
 
@@ -416,6 +417,10 @@ a {
 	margin-bottom: 30px;
 }
 
+/* Topics page */
+#hot-topics {
+}
+
 /* Footer styles */
 .footer {
 	width: 100%;
@@ -491,6 +496,7 @@ a {
 	}
 	.nav.responsive .icon {
 		position: absolute;
+		padding: 0.9rem 1.5rem;
 		right: 0;
 		top: 0;
 	}
@@ -500,7 +506,7 @@ a {
 		text-align: left;
 	}
 	.nav.responsive a:nth-child(2) {
-		margin-top: -14px;
+		margin-top: -16px;
 	}
 }
 
@@ -548,7 +554,7 @@ a {
 		width: 95%;
 	}
 	.display-image {
-		width: 50%;
+		width: 40%;
 	}
 	.section2-text {
 		margin-right: 5%;
@@ -604,7 +610,7 @@ a {
 	}
 
 	.section2-text > ul > li {
-		font-size: 1.2rem;
+		font-size: 1.3rem;
 	}
 
 	/* Footer styling at large breakpoints */
