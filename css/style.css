@@ -120,7 +120,7 @@ a {
 
 /* Navigation styling */
 #myTopNav {
-	margin-top: -13px;
+	margin-top: -16px;
 }
 
 .nav {
@@ -133,9 +133,9 @@ a {
 	display: block;
 	color: #f2f2f2;
 	text-align: center;
-	padding: 14px 16px;
+	padding: 1rem 1.5rem;
 	text-decoration: none;
-	font-size: 1rem;
+	font-size: 1.3rem;
 }
 
 .nav a:hover {
@@ -166,7 +166,7 @@ a {
 
 .section1-text {
 	color: #2c3e50;
-	position: relative;
+	/* position: relative; */
 	text-align: left;
 	margin: auto;
 	width: 80%;
@@ -182,11 +182,12 @@ a {
 }
 
 .header-text {
+	font-size: 1.1rem;
 	margin-top: 0.5rem;
 }
 
 .headerButton {
-	padding: 0.5rem 1rem;
+	padding: 0.7rem 1rem;
 	margin-top: 10px;
 	width: 100%;
 	border: none;
@@ -245,9 +246,9 @@ a {
 #interactive-bar {
 	display: flex;
 	margin: auto;
-	width: 90%;
 	justify-content: center;
 }
+
 #interactive-bar button {
 	display: block;
 	/* margin-top: 1rem; */
@@ -257,7 +258,6 @@ a {
 	color: #e67e22;
 	font-size: 1rem;
 	background-color: none;
-	font-weight: 600;
 	border: none;
 	border-bottom: 4px solid #e67e22;
 	/* padding: 1rem 1rem 0 1rem; */
@@ -272,10 +272,14 @@ a {
 
 #fullwidth-container div:not(:first-child) {
 	color: white;
+	/* font-weight: lighter; */
 	text-align: left;
 	width: 90%;
 	margin: 25px auto;
 	display: none;
+}
+#fullwidth-container div:not(:first-child) p {
+	font-weight: lighter;
 }
 
 /* .toggle-div input:focus {
@@ -290,6 +294,7 @@ a {
 	border: none;
 	background-color: #f39c12;
 	margin-bottom: 1rem;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #fullwidth-container div input::placeholder {
@@ -312,6 +317,7 @@ a {
 	display: flex;
 	justify-content: space-between;
 }
+
 #fullwidth-container div > #toggle-interests {
 	display: flex;
 	justify-content: space-between;
@@ -362,6 +368,9 @@ a {
 	width: 55px;
 	height: 55px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#fullwidth-container div > .toggle-donation button:nth-child(n + 5) {
+	display: none;
 }
 
 #fullwidth-container div:nth-child(2) > .toggle-donation button:hover {
@@ -472,7 +481,8 @@ a {
 }
 
 /* Responsive design */
-@media screen and (max-width: 500px) {
+/* Tablet screens and below */
+@media screen and (max-width: 768px) {
 	/* Responsive navigation */
 	div.content2 {
 		flex-wrap: wrap;
@@ -495,26 +505,64 @@ a {
 		text-align: left;
 	}
 	.nav.responsive a:nth-child(2) {
-		margin-top: -13px;
+		margin-top: -14px;
 	}
 }
 
-@media screen and (min-width: 501px) {
+/* Tablet screens and larger */
+@media screen and (min-width: 768px) {
 	/* Layout */
-	.content2:nth-child(n) {
-		flex-direction: row-reverse;
+	/* Navigation */
+	.nav a {
+		font-size: 1.2rem;
+		padding: 1.3rem 2rem;
+		font-weight: lighter;
 	}
-	.display-image {
-		width: 600px;
-		height: 400px;
-	}
+	/* Header page */
 	.section1-text {
+		padding: 1.5rem;
 		width: 50%;
 		margin-left: 25%;
 		margin-right: auto;
 	}
-	.section2-text {
+	.header {
+		font-size: 1.5rem;
+		font-weight: 900;
+	}
+	.header-text {
+		font-size: 1.3rem;
+		font-weight: lighter;
+	}
+	.headerButton {
+		width: 30%;
+		padding: 1rem 0;
+		float: right;
+	}
+	/* Content page */
+	body > section.content-container:nth-child(even) > .content2 {
+		flex-direction: row-reverse;
+	}
+	body
+		> section.content-container:nth-child(even)
+		> .content2
+		> .section2-text {
 		margin-left: 5%;
+		margin-right: 0;
+	}
+	.content2 {
+		width: 95%;
+	}
+	.display-image {
+		width: 50%;
+	}
+	.section2-text {
+		margin-right: 5%;
+	}
+	.content-headers {
+		font-size: 1.5rem;
+	}
+	.content-text {
+		font-size: 1.3rem;
 	}
 	.page-divider {
 		display: none;
@@ -522,8 +570,43 @@ a {
 	.content-container {
 		text-align: left;
 	}
+	/* Toggle Container Stylings */
+	/* Interactive bar */
+	#interactive-bar button {
+		font-size: 1.2rem;
+		padding: 2rem 1.5rem 1rem 1.5rem;
+	}
+	.toggle-div > p {
+		font-size: 1.3rem;
+	}
+	#fullwidth-container div > .toggle-donation {
+		width: 70%;
+	}
+	#fullwidth-container div > .toggle-donation button {
+		font-size: 1.2rem;
+		width: 70px;
+		height: 70px;
+	}
+	#fullwidth-container div > .toggle-donation button:nth-child(n + 5) {
+		display: block;
+	}
+	#fullwidth-container div input {
+		width: 50%;
+		margin-right: 1rem;
+		margin-left: 20%;
+		padding: 1rem;
+	}
+	#donate-btn {
+		width: 10%;
+		margin: 0;
+		border-radius: 10px;
+	}
 }
-
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
 /* Add Animation and keyframing */
 /* Modal animation */
 @keyframes animatetop {
