@@ -418,9 +418,58 @@ a {
 }
 
 /* Topics page */
-#hot-topics {
+#topics {
+	background-color: black;
+	/* width: 100%; */
+}
+.card {
+	color: white;
+}
+.card-list {
+	width: 60%;
+	margin: auto;
+	display: flex;
+	padding: 3rem;
+	overflow-x: scroll;
 }
 
+.card-list::-webkit-scrollbar {
+	width: 10px;
+	height: 10px;
+}
+.card-list::-webkit-scrollbar-thumb {
+	background: rgba(192, 57, 43, 1);
+	border-radius: 10px;
+	box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, 0.25),
+		inset -2px -2px 2px rgba(192, 57, 43, 0.25);
+}
+.card-list::-webkit-scrollbar-track {
+	background: #73584b;
+}
+
+.card {
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	height: 350px;
+	width: 400px;
+	min-width: 250px;
+	padding: 1.5rem;
+	border-radius: 16px;
+	background: #17141d;
+	box-shadow: -1rem 0 3rem #000;
+	transition: 0.2s;
+	margin: 0;
+}
+.card:hover {
+	transform: translateY(-1rem);
+}
+.card:hover ~ .card {
+	transform: translateX(130px);
+}
+.card:not(:first-child) {
+	margin-left: -130px;
+}
 /* Footer styles */
 .footer {
 	width: 100%;
