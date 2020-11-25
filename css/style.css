@@ -220,12 +220,21 @@ h4 {
 	width: 90%;
 	margin: auto;
 }
-
-.content-headers {
-	font-size: 1.2rem;
-	text-transform: uppercase;
+.section2-text {
+	margin-top: 5%;
 }
 
+.section2-text > ul > li {
+	font-size: 1.2rem;
+}
+.content-headers {
+	font-size: 1.4rem;
+	text-transform: uppercase;
+}
+.content-text {
+	font-size: 1.2rem;
+	margin-bottom: 10%;
+}
 .display-image {
 	width: 100%;
 	box-shadow: 5px 10px 18px #888888;
@@ -263,11 +272,11 @@ h4 {
 	background-color: #c0392b;
 	padding: 1.5rem 1rem 0.5rem 1rem;
 	color: #e67e22;
-	font-size: 1rem;
+	font-size: 1.2rem;
 	background-color: none;
 	border: none;
 	border-bottom: 4px solid #e67e22;
-	transition: all 0.7s ease-in-out;
+	transition: all 0.5s ease-in-out;
 }
 
 #interactive-bar button.active,
@@ -287,6 +296,7 @@ h4 {
 }
 #fullwidth-container div:not(:first-child) p {
 	font-weight: lighter;
+	font-size: 1.2rem;
 }
 
 /* .toggle-div input:focus {
@@ -852,6 +862,7 @@ h4 {
 
 	.section2-text > ul > li {
 		font-size: 1.3rem;
+		margin-bottom: 1rem;
 	}
 
 	.topic-card {
