@@ -1,3 +1,4 @@
+// Initalising variables
 const form = document.getElementById("signin-modal");
 const signupButtons = document.getElementsByClassName("openModal");
 //Only selects the first element with the class name of close. Ensure that we don't
@@ -14,6 +15,8 @@ const togglePage = document.getElementById("fullwidth-container");
 const toggleBar = document.getElementById("interactive-bar");
 const btns = toggleBar.getElementsByClassName("btn");
 const toggleDiv = togglePage.getElementsByClassName("toggle-div");
+const activeBtn = toggleBar.getElementsByClassName("active");
+const activeDiv = togglePage.getElementsByClassName("activated");
 
 //Handle events (Open) but pass in no props (Not required)
 for (let i = 0; i < signupButtons.length; i++) {
