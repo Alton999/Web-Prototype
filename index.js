@@ -16,8 +16,6 @@ const togglePage = document.getElementById("fullwidth-container");
 const toggleBar = document.getElementById("interactive-bar");
 const btns = toggleBar.getElementsByClassName("btn");
 const toggleDiv = togglePage.getElementsByClassName("toggle-div");
-const activeBtn = toggleBar.getElementsByClassName("active");
-const activeDiv = togglePage.getElementsByClassName("activated");
 
 //Handle events (Open) but pass in no props (Not required)
 for (let i = 0; i < signupButtons.length; i++) {
