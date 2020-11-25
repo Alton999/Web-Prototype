@@ -1,5 +1,3 @@
-// Conditional rendering by using get element by ID
-// Initalising variables
 const form = document.getElementById("signin-modal");
 const signupButtons = document.getElementsByClassName("openModal");
 //Only selects the first element with the class name of close. Ensure that we don't
