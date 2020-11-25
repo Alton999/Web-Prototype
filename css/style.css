@@ -423,6 +423,17 @@ h4 {
 }
 
 /* Topics page */
+#topics-intro {
+	width: 80%;
+	margin: 2rem auto;
+}
+.topics-header {
+	text-transform: uppercase;
+}
+.topics-body {
+	display: flex;
+	flex-wrap: wrap;
+}
 #topics {
 	width: 80%;
 	margin: 2rem auto;
@@ -451,9 +462,9 @@ h4 {
 	/* margin-right: 2rem; */
 }
 .topic-card:hover {
-	background-size: 130% 300px;
-	transition: 0.2s ease-in-out;
-	box-shadow: none;
+	background-size: 120% 300px;
+	transition: 0.3s ease-in-out;
+	/* box-shadow: none; */
 }
 
 .topic-card > header > h3 {
@@ -846,6 +857,13 @@ h4 {
 	.topic-card > header {
 		margin: 80px auto auto auto;
 		text-align: center;
+	}
+
+	.card-content > img {
+		margin: 10px 0;
+		border-radius: 10px;
+		width: 100%;
+		height: 170px;
 	}
 
 	/* Footer styling at large breakpoints */
